@@ -1,0 +1,13 @@
+my_items={"me","friend", "home","spichki","GameConsole","BookSurvive","Surviver","more_food","pilmeshki","cat"}
+frend_items=set()
+item= input("Введите вещь которую хотите взять(пельмешки)-")
+frend_items.add(item)
+borth_items=my_items.intersection(frend_items)
+print("Мои с другом вещи:")
+print(borth_items)
+only_my_items=my_items.difference(frend_items)
+print("ТОЛЬКО мои вещи:")
+print(only_my_items)
+only_frend_items=frend_items.difference(my_items)
+print("Вещи левого челп(моего друга):")
+print(only_frend_items)
